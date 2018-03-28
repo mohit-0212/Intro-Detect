@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Intro Detection</title>
+  
+  
+  
+      <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+  
+</head>
+
+<body>
+	<h1> Output- Intro ends at </h1>
+	<br>
+	<!-- <img src="{{output_image}}" alt="Output Image"> -->
+
+    <h3> {"Minutes": "{{mins}}",
+    <!-- <br> -->
+    "Seconds": "{{secs}}"}
+    </h3>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script  src="{{ url_for('static',filename='styles/index.js') }}"></script>
+
+</body>
+</html>

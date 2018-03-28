@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Intro Detection</title>
+  
+  
+  
+      <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+  
+</head>
+
+<body>
+<h1>Select Video File</h1>
+  <form action="/upload" method="POST" enctype = "multipart/form-data">
+  <input type="file" name = "file"/>
+  <p>Drag your file here or click in this area.</p>
+  <button type="submit">Upload</button>
+</form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script  src="{{ url_for('static',filename='styles/index.js') }}"></script>
+
+</body>
+</html>
